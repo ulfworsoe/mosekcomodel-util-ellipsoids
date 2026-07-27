@@ -1,10 +1,20 @@
 [package]
-name = "mosekcomodel_ellipsoids"
-version = "0.2.0"
+name = "mosekcomodel_util_ellipsoids"
+version = "0.1.0"
 edition = "2021"
+rust-version = "1.85.0"
+description = "Ellipsoid formulations for MOSEK Conic Model"
+authors = [ "Ulf Worsøe <ulf.worsoe@mosek.com>" ]
+keywords = ["mosek","optimization","conic_optimization"]
+categories = ["mathematics","science"]
+license = "MIT"
+repository = "https://github.com/ulfworsoe/mosekcomodel-util-ellipsoids.rust"
+homepage = "https://mosek.com"
+readme = "README.md"
+
 
 [dependencies]
-itertools = "0.13.0"
+itertools = "~0.15.0"
 mosekcomodel = "~0.5.0"
 
 [dev-dependencies]
