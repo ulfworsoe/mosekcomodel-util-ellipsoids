@@ -1,0 +1,11 @@
+[package]
+name = "mosekcomodel_ellipsoids"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+itertools = "0.13.0"
+mosekcomodel = "~0.5.0"
+
+[dev-dependencies]
+mosekcomodel_mosek = "~0.5.0"
