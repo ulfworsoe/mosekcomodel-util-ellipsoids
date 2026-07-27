@@ -18,7 +18,11 @@ use mosekcomodel::matrix;
 use mosekcomodel::domain::{QuadraticCone,GeometricMeanCone};
 use itertools::izip;
 
-/// Structure defining an ellipsoid parameterized as either
+//
+/// Structure defining an ellipsoid.
+///
+/// The ellipsoid is defined by one of the following parameterizizations
+///
 /// 1.
 ///     $$
 ///       E_{P,q} = \\left\\{ x\\in\\mathbb{R}^N : \\left\\Vert Px+q \\right\\Vert_2 \\leq 1 \\right\\}
@@ -41,7 +45,7 @@ use itertools::izip;
 ///     $$
 ///         Z = P^{-1}, w = -P^{-1}q
 ///     $$
-///
+/// <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
 #[allow(non_snake_case)]
 #[derive(Clone)]
 pub struct Ellipsoid<const N : usize> {

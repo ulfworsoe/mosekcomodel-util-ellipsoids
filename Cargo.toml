@@ -1,6 +1,6 @@
 [package]
 name = "mosekcomodel_util_ellipsoids"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.85.0"
 description = "Ellipsoid formulations for MOSEK Conic Model"
