@@ -1,6 +1,6 @@
 [package]
 name = "mosekcomodel_util_ellipsoids"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 rust-version = "1.85.0"
 description = "Ellipsoid formulations for MOSEK Conic Model"
@@ -15,7 +15,7 @@ readme = "README.md"
 
 [dependencies]
 itertools = "~0.15.0"
-mosekcomodel = "~0.5.0"
+mosekcomodel = "~0.6.0"
 
 [dev-dependencies]
-mosekcomodel_mosek = "~0.5.0"
+mosekcomodel_mosek = "~0.6.0"

@@ -351,8 +351,8 @@ mod test {
 
         M.solve();
 
-        let _Psol = M.primal_solution(SolutionType::Default, &P).unwrap();
-        let _qsol = M.primal_solution(SolutionType::Default, &q).unwrap();
+        let _Psol = M.primal_solution(0, &P).unwrap();
+        let _qsol = M.primal_solution(0, &q).unwrap();
     }
 
 
@@ -389,7 +389,7 @@ mod test {
 
         M.write_problem("lw-inner-2.ptf");
 
-        let _Psol = M.primal_solution(SolutionType::Default, &P).unwrap();
-        let _qsol = M.primal_solution(SolutionType::Default, &q).unwrap();
+        let _Psol = M.primal_solution(0, &P).unwrap();
+        let _qsol = M.primal_solution(0, &q).unwrap();
     }
 }
